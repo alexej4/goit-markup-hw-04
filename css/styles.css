@@ -126,6 +126,9 @@ img {
 .contacts a:focus {
   color: var(--logo-color);
 }
+/* .cont-item-mail::before{
+  content: "1"; 
+} */
 /* Убираем отступы крайнего элемена 2-й способ  ЛУЧШИЙ!!!*/
 .cont-item + .cont-item {
   margin-left: 50px;
@@ -141,6 +144,12 @@ img {
 /* Секция герой */
 .hero {
   background: var(--hero-color);
+  max-width: 1600px;
+  height: 600px;
+  /* Многослойный фон: сначала прозрачный фон (с помощью градиента,
+  потом ставим картинку) */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url(../images/Imgfon1.jpg);
   /* height: 600px; */
   padding-top: 200px;
   padding-bottom: 200px;
@@ -198,6 +207,28 @@ img {
 }
 .dignity-item:not(:last-child) {
 margin-right: 30px;
+}
+/* Добовляем в списки картинки через "before" */
+.dignity-item::before {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "" ;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.dignity-item-antena::before {
+  background-image: url(../images/Group6antena\(png1\).png); 
+}
+.dignity-item-clock::before {
+  background-image: url(../images/Group2clock\(png1\).png);
+}
+.dignity-item-computer::before {
+  background-image: url(../images/Group3computer\(png1\).png);
+}
+.dignity-item-cosmo::before {
+  background-image: url(../images/Group4cosmo\(png1\).png);
 }
 .dignity-title {
   font-weight: 700;
@@ -265,6 +296,7 @@ margin-right: 30px;
 
 /* Подвал */
 .ftr {
+  max-width: 1600px;
   background-color: var(--hero-color);
   margin-left: auto;
   margin-right: auto;
