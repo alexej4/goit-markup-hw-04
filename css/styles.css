@@ -126,6 +126,14 @@ img {
 .contacts a:focus {
   color: var(--logo-color);
 }
+/* .cont-item-mail::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  outline: 1px solid #000000;
+  background-color: #2196f3;
+} */
 /* .cont-item-mail::before{
   content: "1"; 
 } */
