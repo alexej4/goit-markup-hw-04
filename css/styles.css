@@ -142,7 +142,7 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-.header-icon:hover {
+.header-icon:hover .header-icon:focus {
   fill: var(--logo-color);
 }
 /* Убираем отступы крайнего элемена 2-й способ  ЛУЧШИЙ!!!*/
@@ -163,11 +163,11 @@ img {
   background: var(--hero-color);
   max-width: 1600px;
   height: 600px;
-  /* Многослойный фон: сначала прозрачный фон (с помощью градиента,
+  /* Многослойный фон: сначала прозрачный фон (затемнение) (с помощью градиента,
   потом ставим картинку) */
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Imgfon1.jpg);
-  /* height: 600px; */
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -235,6 +235,7 @@ img {
   height: 120px;
   margin-bottom: 30px;
 }
+/* Заливаем картинки через -background-image- и -:before*/
 .dignity-item-antena::before {
   background-image: url(../images/Group6antena\(png1\).png);
 }
@@ -325,10 +326,9 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.team-item-link:hover {
+.team-item-link:hover,
+.team-item-link:focus {
   fill: var(--white-next-color);
-}
-.team-item-link:hover {
   background-color: var(--logo-color);
 }
 .team-item-network-item:not(:last-child) {
@@ -370,7 +370,8 @@ img {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.old-clients:hover {
+.old-clients:hover,
+.old-clients:focus {
   fill: var(--logo-color);
   border-color: var(--logo-color);
 }
@@ -455,7 +456,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.ftr-list-item-link:hover {
+.ftr-list-item-link:hover,
+.ftr-list-item-link:focus {
   background-color: var(--logo-color);
 }
 
@@ -518,7 +520,8 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.port-item:hover {
+.port-item:hover,
+.port-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .port-bord {
