@@ -25,12 +25,11 @@
         </nav>
         <ul class="contacts">
             <li class="cont-item">
-                
-                <a href="mailto:info@devstudio.com" class="cont-link cont-item-mail"><svg class="header-icon" width="16" height="12">
+                <a href="mailto:info@devstudio.com" class="cont-link"><svg class="header-icon letter">
                     <use href="./images/symbol-defs.svg#icon-letterHdr"></use>
                     </svg>info@devstudio.com</a></li>
             <li class="cont-item">
-                <a href="tel:+380961111111" class="cont-link cont-item-phone"><svg class="header-icon" width="16" height="12">
+                <a href="tel:+380961111111" class="cont-link"><svg class="header-icon phone">
                     <use href="./images/symbol-defs.svg#icon-phoneHdr"></use>
                     </svg>+38 096 111 11 11</a></li>
         </ul>
@@ -49,25 +48,45 @@
             <div class="conteiner">
             <h2 class="hide">Почему именно мы?</h2>
             <ul class="dignity-list">
-                <li class="dignity-item dignity-item-antena">
+                <li class="dignity-item">
+                    <div class="thumb-item">
+                        <svg class="thumb-item-icon">
+                            <use href="./images/symbol-defs.svg#icon-antenna" width="70" height="70"></use>
+                        </svg>
+                    </div>
                     <h3 class="dignity-title">Внимание к деталям</h3>
                     <p class="dignity-text">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li class="dignity-item dignity-item-clock">
+                <li class="dignity-item">
+                    <div class="thumb-item">
+                        <svg class="thumb-item-icon">
+                            <use href="./images/symbol-defs.svg#icon-clock" width="70" height="70"></use>
+                        </svg>
+                    </div>
                     <h3 class="dignity-title">Пунктуальность</h3>
                     <p class="dignity-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li class="dignity-item dignity-item-computer">
+                <li class="dignity-item">
+                    <div class="thumb-item">
+                        <svg class="thumb-item-icon">
+                            <use href="./images/symbol-defs.svg#icon-diagram" width="70" height="70"></use>
+                        </svg>
+                    </div>
                     <h3 class="dignity-title">Планирование</h3>
                     <p class="dignity-text">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li class="dignity-item dignity-item-cosmo">
+                <li class="dignity-item">
+                    <div class="thumb-item">
+                        <svg class="thumb-item-icon">
+                            <use href="./images/symbol-defs.svg#icon-astronaut" width="70" height="70"></use>
+                        </svg>
+                    </div>
                     <h3 class="dignity-title">Современные технологии</h3>
                     <p class="dignity-text">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -97,153 +116,155 @@
                         <div class="our-team">
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p lang="en" class="team-text">Product Designer</p>
-                        </div>
                         <div class="conteiner-network">
-                        <ul class="team-item-network">
-                            <li class="team-item-network-item">
-                                <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                            <ul class="team-item-network">
+                                <li class="team-item-network-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                        
                     </li>
                     <li class="team-item"><img src="./images/olga(1).jpg" alt="Ольга Репина" width="270" height="260" class="team-img">
                         <div class="our-team">
                         <h3 class="team-title">Ольга Репина</h3>
                         <p lang="en" class="team-text">Frontend Developer</p>
-                        </div>
                         <div class="conteiner-network">
-                        <ul class="team-item-network">
-                            <li class="team-item-network-item">
-                                <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                            <ul class="team-item-network">
+                                <li class="team-item-network-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                        
                     </li>
                     <li class="team-item"><img src="./images/nikola(1).jpg" alt="Николай Тарасов" width="270" height="260" class="team-img">
                         <div class="our-team">
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p lang="en" class="team-text">Marketing</p>
-                        </div>
                         <div class="conteiner-network">
-                        <ul class="team-item-network">
-                            <li class="team-item-network-item">
-                                <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                            <ul class="team-item-network">
+                                <li class="team-item-network-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                     </li>
                     <li class="team-item"><img src="./images/mishel(1).jpg" alt="Михаил Ермаков" width="270" height="260" class="team-img">
                         <div class="our-team">
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p lang="en" class="team-text">UI Designer</p>
-                        </div>
                         <div class="conteiner-network">
-                        <ul class="team-item-network">
-                            <li class="team-item-network-item">
-                                <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team-item-network-item">
-                                <a href="" class="team-item-link">
-                                    <svg class="team-item-pas" width="20" height="20">
-                                        <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                            <ul class="team-item-network">
+                                <li class="team-item-network-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-item-network-item">
+                                    <a href="" class="team-item-link">
+                                        <svg class="team-item-pas" width="20" height="20">
+                                            <use href="./images/symbol-defs1.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                     </li>
                 </ul>
                 </div>

@@ -142,6 +142,14 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+.letter {
+  width: 17px;
+  height: 15px;
+}
+.phone {
+  width: 16px;
+  height: 16px;
+}
 .header-icon:hover .header-icon:focus {
   fill: var(--logo-color);
 }
@@ -155,6 +163,7 @@ img {
 }
 .cont-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -225,8 +234,22 @@ img {
 .dignity-item:not(:last-child) {
   margin-right: 30px;
 }
+.thumb-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.thumb-item-icon {
+  width: 70px;
+  height: 70px;
+}
 /* Добовляем в списки картинки через "before" */
-.dignity-item::before {
+/* .dignity-item::before {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -234,9 +257,9 @@ img {
   content: '';
   height: 120px;
   margin-bottom: 30px;
-}
+} */
 /* Заливаем картинки через -background-image- и -:before*/
-.dignity-item-antena::before {
+/* .dignity-item-antena::before {
   background-image: url(../images/Group6antena\(png1\).png);
 }
 .dignity-item-clock::before {
@@ -247,8 +270,9 @@ img {
 }
 .dignity-item-cosmo::before {
   background-image: url(../images/Group4cosmo\(png1\).png);
-}
+} */
 .dignity-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -286,7 +310,6 @@ img {
 .team-item {
   list-style-type: none;
   width: 270px;
-  border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-next-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -315,6 +338,7 @@ img {
 }
 .team-item-network {
   display: flex;
+  margin-top: 16px;
 }
 /* Задаем параметры иконки внутри рамки */
 .team-item-link {
@@ -344,7 +368,7 @@ img {
 .conteiner-network {
   /* margin-left: 32px;
   margin-right: 32px; */
-  margin: 0 32px 30px 32px;
+  margin: 0 32px 0 32px;
 }
 
 /* Постоянные клиенты */
@@ -363,7 +387,7 @@ img {
   width: 170px;
   height: 92px;
   text-align: center;
-  border: 1px solid #eeeeee;
+  border: 1px solid #afb1b8;
   border-radius: 0px 0px 4px 4px;
 }
 .client-list-item {
@@ -429,6 +453,7 @@ img {
 }
 .ftr-dad {
   display: flex;
+  align-items: baseline;
 }
 .ftr-socnetwork {
   display: block;
@@ -461,10 +486,6 @@ img {
   background-color: var(--logo-color);
 }
 
-/* Portfolio html */
-.port-our-work {
-  padding-top: 0;
-}
 .hide {
   display: none;
 }
@@ -473,7 +494,6 @@ img {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 102px;
 }
 .port-btn-list > .item:not(:last-child) {
   margin-right: 8.12px;
@@ -520,8 +540,12 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.port-item:hover,
-.port-item:focus {
+.port-item-link {
+  display: block;
+}
+
+.port-item-link:hover,
+.port-item-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .port-bord {
