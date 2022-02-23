@@ -59,7 +59,14 @@ img {
 }
 
 /* Щапка сaйта */
+/* фиксируем шапку сайта при скроле вниз 1-е 4-е строки
+Также при этом задаем боди падинг-топ на высоту шапки - Но лучше это сдеать через JS!!! */
 .top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--white-next-color);
   border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;

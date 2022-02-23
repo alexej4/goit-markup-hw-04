@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--Шапка сайта-->
-    <header class="top">
+    <header class="top page-header">
         <div class="conteiner header-wrap">
         <nav class="nav">
             <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
@@ -370,6 +370,13 @@
             </ul>
             </div>
         </div>
-    </footer>   
+    </footer>
+     <!--Скрипт для паддинга боди, чтобы фиксированная шапка не наплывала на него -->
+   <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
 </body>
 </html>

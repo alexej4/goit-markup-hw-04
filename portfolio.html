@@ -14,7 +14,7 @@
 </head>
 <body>
         <!--Шапка сайта-->
-        <header class="top">
+        <header class="top page-header">
             <div class="conteiner header-wrap">
                 <nav class="nav">
                     <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
@@ -177,5 +177,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        const { height: pageHeaderHeight } = document
+            .querySelector(".page-header")
+            .getBoundingClientRect();
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
 </body>
 </html>
